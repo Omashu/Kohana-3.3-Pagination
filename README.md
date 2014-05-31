@@ -16,6 +16,22 @@ Example 2:
 	$model = Pagination::factory(array options, string config);
 	echo $model;
 
+Example 3 (create by route):
+----------------------------
+	// example route items: "items/page<p>?order_by=<order_by>&order_way=<order_way>"
+	$model = Pagination::factory(array(
+		'current_page' => 1,
+		'count_items' => 100,
+		'items_per_page' => 25,
+		'route' => 'items',
+		'route_page_key' => 'p',
+		'route_args' => array(
+			'order_by' => 'rating',
+			'order_way' => 'desc',
+		)
+	));
+	echo $model;
+
 Options:
 --------
 * `current_page` - required, int current page
@@ -23,7 +39,7 @@ Options:
 * `items_per_page` - required, int items on page
 * `view` - string, template name - default: `pagination/pagination`
 * `route` - string, route key for create urls by route - default: `NULL`
-* `route_page_key` - string, route argument for replace - default: `NULL`
+* `route_page_key` - string, route argument key for replace on page number - default: `NULL`
 * `route_args` - array, route other arguments for replace - default: `array()`
 * `base_url` - string, base url for create urls by url - default: `NULL`
 * `switch_type` - string, show type, normal (1,2,3,4,5,6,7) OR pieces (1,2...6,7..9,10) - default: `normal`
