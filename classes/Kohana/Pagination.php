@@ -19,7 +19,7 @@
  * 
  * 		Return urls: '/page1', '/page2', '/page3' ...
  * 
- * Create by route:
+ * 	Create by route:
  * 
  * 		#3: Pagination::factory(array(
  * 					'current_page' => 1,
