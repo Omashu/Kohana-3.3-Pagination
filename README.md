@@ -47,8 +47,8 @@ Options:
 * `show_prev` - bool, show button to prev page - default: `TRUE`
 * `show_last` - bool, show button to last page - default: `TRUE`
 * `show_next` - bool, show button to next page - default: `TRUE`
-* `show_in_block` - bool, wrap in <div/> - default: `TRUE`
-* `show_in_list` - bool, wrap in <ul/> - default: `TRUE`
+* `show_in_block` - bool, wrap in div - default: `TRUE`
+* `show_in_list` - bool, wrap in ul - default: `TRUE`
 * `block_params` - array, attributes for block - default: `array('class' => 'pagination')`
 * `list_params` - array, attributes for list - default: `array()`
 * `li_active_params` - array, attributes for active li - default: `array('class' => 'active')`
